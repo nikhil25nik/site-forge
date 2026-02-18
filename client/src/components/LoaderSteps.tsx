@@ -21,7 +21,6 @@ export default function LoaderSteps(){
         return ()=> clearInterval(interval)
     },[])
 
-    const Icon = steps[current].icon;
     return(
         <div className="w-full h-full flex flex-col items-center justify-center bg-gray-950 relavtive overflow-hidden text-white">
             <div className="absolute inset-0 bg-linear-to-br from-blue-500/10 via-purple-500/10 to-fuchsia-500/10 blur-3xl animate-pulse"></div>

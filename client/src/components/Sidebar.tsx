@@ -1,4 +1,4 @@
-import { BotIcon, ChartColumnStacked, EyeIcon, Loader2Icon, SendIcon, UserIcon } from 'lucide-react';
+import { BotIcon,  EyeIcon, Loader2Icon, SendIcon, UserIcon } from 'lucide-react';
 import { Message, Project, Version } from '../types/index';
 import { Link } from 'react-router-dom';
 import { useEffect, useRef, useState } from 'react';

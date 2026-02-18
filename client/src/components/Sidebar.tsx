@@ -50,7 +50,7 @@ export default function Sidebar({isMenuOpen,project,setProject, isGenerating,set
         let interval : number | undefined;
         try{
             setIsGenerating(true);
-            interval = setInterval(()=>{
+            interval = window.setInterval(()=>{
                 fetchProject();
             },10000)
 

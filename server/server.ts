@@ -17,8 +17,6 @@ const corsOptions = {
     credentials:true
 }
 app.use(cors(corsOptions));
-app.options("*", cors());
-
 app.post("/api/stripe",express.raw({type:"application/json"}),stripeWebhooks)
 app.all('/api/auth/{*any}', toNodeHandler(auth));
 

@@ -31,4 +31,6 @@ app.get('/', (req: Request, res: Response) => {
 app.use("/api/user",userRoutes);
 app.use("/api/project",projectRoute);
 
-export default app;
+app.listen(port, () => {
+    console.log(`Server is running at http://localhost:${port}`);
+});
